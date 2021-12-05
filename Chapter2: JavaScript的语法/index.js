@@ -65,8 +65,36 @@
 // foo('abc') // ['abc', 100]
 
 
-function foo(x = 'abc', y) {
-  console.log([x, y]);
-}
+// function foo(x = 'abc', y) {
+//   console.log([x, y]);
+// }
 
-foo(undefined, 'abc') // ['abc','abc']
+// foo(undefined, 'abc') // ['abc','abc']
+
+
+// ----
+// var str = 'hello'
+// var obj = {}
+// x = str || obj
+// y = str && obj
+// console.log(x, y);
+
+
+// console.log(+'a');
+// console.log(-0 === 0); // true
+// console.log(NaN !== NaN); //true
+// console.log(Object.is(-0, 0)); //false
+// console.log(Object.is(NaN, NaN)); // true、
+
+
+// ----
+// var obj, str = 'abcdef'
+// var obj1 = new String(str)
+// var obj2 = obj = new String(str)
+
+// console.log(obj1 == obj2); // false
+// console.log(obj1 === obj2); // false
+
+// console.log(obj == obj2); //true
+// console.log(obj === obj2); // true
+

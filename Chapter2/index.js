@@ -98,3 +98,52 @@
 // console.log(obj == obj2); //true
 // console.log(obj === obj2); // true
 
+// ----
+// var o1 = {}
+// var o2 = {}
+// var str = '123'
+// var num = 1
+// var b0 = false
+// var b1 = true
+// var ref = new String()
+
+
+// console.log(b1 < num); //false
+// console.log(b1 <= num); // true
+// console.log(b1 > b0); //true
+
+// console.log(num > ref); // true
+
+
+// console.log(o1 > o2 || o1 < o2 || o1 == o2); //false
+
+
+
+// ----
+// var s1 = 'abc'
+// var s2 = 'ab'
+// var s3 = '101'
+
+// var b = true
+// var i = 100
+
+// // 两个操作数为字符串，将比较每个字符的序列值
+// console.log(s1 > s2); // true
+
+// // 将字符串s3转换为数值  => 101
+// console.log(s3 > i); // true
+
+// // 将字符串s1转化为数组 => NaN
+// console.log(s1 > b || s1 < b || s1 == b); // false
+
+// // 两个NaN比较。NaN不等值也不大于或小于
+// console.log(s1 > NaN || s1 < NaN || s1 == NaN); // false
+
+
+// ----
+// function foo() {
+//   console.log(typeof x);
+//   let x = 100
+// }
+
+// foo()
